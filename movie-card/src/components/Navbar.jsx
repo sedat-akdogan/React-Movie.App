@@ -14,10 +14,7 @@ const Navbar = () => {
                     <Link className="text-2xl  pr-2 font-semibold" to="/">
                         React Movie App
                     </Link>
-                    {/* Collapsible wrapper */}
-                    {/* Right elements */}
                     <div className="flex items-center relative">
-                        {/* Icon */}
                         {currentUser && (
                             <h5 className="mr-2 capitalize">{currentUser?.displayName}</h5>
                         )}
@@ -71,7 +68,6 @@ const Navbar = () => {
                             </ul>
                         </div>
                     </div>
-                    {/* Right elements */}
                 </div>
             </nav>
             <div className="h-[52px]"></div>
