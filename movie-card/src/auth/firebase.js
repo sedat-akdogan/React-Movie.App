@@ -32,11 +32,12 @@ const auth = getAuth(app);
 
 export const createUser = async (email, password, navigate, displayName) => {
     try {
-        await createUserWithEmailAndPassword(
+        let userCredential = await createUserWithEmailAndPassword(
             auth,
             email,
             password
         );
+        console.log(userCredential);
         await updateProfile(auth.currentUser, {
             displayName: displayName,
         });
