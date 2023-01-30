@@ -1,4 +1,4 @@
-# KeyPoint-React-Task
+# React-Task: Movie app
 
 Build a Movie App using ReactJS.
 ## Steps to Solution
