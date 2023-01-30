@@ -48,6 +48,16 @@ export const createUser = async (email, password, navigate, displayName) => {
     }
 };
 
+export const passwordcheck = async (password) => {
+    const check = /(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.{7,})/;
+    if(password.match(check)) {
+        return true;
+    } else {
+        toastErrorNotify("Your password must be at least 7 digits!");
+        return false;
+    }
+};
+
 export const signIn = async (email, password, navigate) => {
     try {
         await signInWithEmailAndPassword(auth, email, password);

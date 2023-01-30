@@ -33,7 +33,7 @@ const Main = () => {
             getMovies(SEARCH_API + searchTerm);
             setSearchTerm("");
         } else if (!currentUser) {
-            toastWarnNotify("Please log in to search a movie");
+            toastWarnNotify("Please login to search a movie");
             // alert("please log in to see details");
         } else {
             toastWarnNotify("Please enter a text");
